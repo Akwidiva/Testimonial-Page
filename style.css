@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: "Sora", serif;
+    background-color: #f9f9f9;
+}
+
+.body {
+    margin: 150px 72px;
+    display: flex;
+    flex-direction: row;
+    width: 1200px;
+    height: 500px;
+    gap: 50px;
+    color: #52525A;
+}
+
+.one {
+    width: 550px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+h1 {
+    font-size: 2.25rem;
+    color: #18181B;
+}
+
+p {
+    font-size: 1.25rem;
+}
+
+ul {
+    list-style-image: url(resources/Done_ring_round_fill.svg);
+    padding-left: 20px;
+}
+
+li {
+    font-size: 0.875rem;
+    margin-bottom: 10px;
+}
+
+.img_container {
+    border: 1px solid #F5C044;
+    background-color: #F5C044;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex; /* Center the SVG */
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Ensure the SVG doesn't overflow the circle */
+}
+
+.two {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between cards */
+    padding: 20px; /* Optional padding for internal spacing */
+}
+
+.testi {
+    width: 80%; /* Reduced width */
+    padding: 20px;
+    border-radius: 10px;
+    background: #ffffff; /* White background for cards */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    transition: transform 0.3s; /* Smooth transition for hover effect */
+    position: relative; /* Required for positioning */
+}
+     
+
+/* Staggered positioning */
+#one {
+    transform: translateX(12rem); /* Shift the first card to the right */
+}
+
+#two {
+    /* No additional transform for the second card */
+}
+
+h2 {
+    font-weight: 600;
+    color: #18181B;
+    font-size: 1rem;
+}
+
+.p1 {
+    font-size: 1rem;
+}
+
+.img {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    height: 50px;
+}
+
+.star {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.author-info {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 16px;
+    color: rgb(55, 65, 81);
+}
+
+.author-info a {
+    text-decoration: none;
+}
