@@ -1,152 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link
-      rel="icon"
-      href="resources/favicon.ico"
-      type="image/x-icon"
-      sizes="96x96"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Testimonial Page | devChallenges.io</title>
+  <!--Adding the Tailwind CSS library-->
+  <!-- <script src="https://unpkg.com/@tailwindcss/browser@4"></script> -->
 
-    <!--You are welcome to delete these styles or modify them in your own stylesheet -->
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
+  <link rel="icon" href="resources/favicon.ico" type="image/x-icon" sizes="96x96" />
 
-      body {
-        height: 100vh;
-        font-family: "Sora", serif;
-      }
-      .body{
-        margin: 150px 72px;
-        display: flex;
-        flex-direction: row;
-        width: 1200px;
-        height:500px;
-        gap:50px;
-        color: #52525A;
-      }
-      .one{
-        width:550px;
-        height: 500px;
-        display:flex;
-        flex-direction: column;
-        gap:20px;
-      }
-        h1{
-          font-size: 2.25rem;
-          color:#18181B;
-        }
-        p{
-          font-size: 1.25rem;
-        }
-        ul{
-          list-style-image: url(resources/Done_ring_round_fill.svg);
-          padding-left: 20px;
-        }
-        li{
-          font-size: 0.875rem;
-          margin-bottom: 10px;
-        }
-        .img_container{
-        border: 1px solid #F5C044;
-        background-color: #F5C044;
-        border-radius: 50%;
-        width: 50px;
-        height:50px;
-        display: flex; /* Center the SVG */
-        align-items: center;
-        justify-content: center;
-        overflow: hidden; /* Ensure the SVG doesn't overflow the circle */
-      }
-    
-      .two{
-        display: flex;
-        flex-direction: column;
-        gap: 20px; /* This will work as expected */
-        background-color: #18181b;
-        padding: 20px; /* Optional padding for internal spacing */
-        border-radius: 10px; /* Optional for a clean look */
-            } 
-       .testi{
-          width: 100%; /* Stretch to fill the parent container */
-          padding: 20px;
-          border: 1px solid black;
-          border-radius: 10px;
-          box-sizing: border-box; /* Ensure padding doesn't affect layout */
-        }
-         
-      
-      h2{
-          font-weight: 600;
-          color:#18181B;
-          font-size: 1rem;
-        }
-          .p1{
-            font-size: 1rem;
-          }
-         .img{
-          display: flex;
-          flex-direction: row;
-          gap: 20px;
-          height:50px;
-          }
+  <title>Testimonial Page | devChallenges.io</title>
 
-      
-        .star{
-          display:flex;
-          flex-direction: row;
-          justify-content: center;
-          align-items: center;
-        }
-        
-      .author-info {
-        font-size: 14px;
-        text-align: center;
-        margin-top: 16px;
-        color: rgb(55, 65, 81);
-      }
+  <!--You are welcome to delete these styles or modify them in your own stylesheet -->
+  <style>
 
-      .author-info a {
-        text-decoration: none;
-      }
-    </style>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sora:wght@100..800&display=swap" rel="stylesheet">
-  </head>
-  <body> 
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sora:wght@100..800&display=swap"
+    rel="stylesheet">
+
+  <!--Linking t Stylesheet using the link tag-->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
   <div class="body">
     <div class="one">
-        <div class="img_container"><img id="star_3" src="resources/star (3).png" alt="Star_3" width="30px" height="30px"></div>
-        <h1>Reviewers</h1>
-        <p>Reviewers is where people can access guidelines, checklists, and other tools to assist them in reviewing papers or manuscripts. It provides a structured approach to ensure that the review process is thorough, efficient, and consistent.</p>
-        <uL>
-          <li>Checklist to Review an Academic Paper</li>
-          <Li>Peer Review Checklist</Li>
-          <li>Checklist for Editors, Reviewers, and Authors of SPIE Journals</li>
-        </uL>
-        </div>
-    <div class="'two">
+      <div class="img_container"><img id="star_3" src="resources/star (3).png" alt="Star_3" width="30px" height="30px">
+      </div>
+      <h1>Reviewers</h1>
+      <p>Reviewers is where people can access guidelines, checklists, and other tools to assist them in reviewing papers
+        or manuscripts. It provides a structured approach to ensure that the review process is thorough, efficient, and
+        consistent.</p>
+      <ul>
+        <li>Checklist to Review an Academic Paper</li>
+        <Li>Peer Review Checklist</Li>
+        <li>Checklist for Editors, Reviewers, and Authors of SPIE Journals</li>
+      </ul>
+    </div>
+    <div class="two">
       <div class="testi" id="one">
-          <div class='img'>
-            <img src="resources/google-testimonial.svg">
-              <div class="star">
-                <img src="resources/Star_fill.svg">
-                <img src="resources/Star_fill.svg">
-                <img src="resources/Star_fill.svg">
-                <img src="resources/Star_fill.svg">
-                <img src="resources/Star_fill_gray.svg">
-              </div>
+        <div class='img'>
+          <img src="resources/google-testimonial.svg">
+          <div class="star">
+            <img src="resources/Star_fill.svg">
+            <img src="resources/Star_fill.svg">
+            <img src="resources/Star_fill.svg">
+            <img src="resources/Star_fill.svg">
+            <img src="resources/Star_fill_gray.svg">
           </div>
+        </div>
         <h2>Samantha Lee</h2>
         <p class="p1">The checklist ensures that the review process is thorough</p>
       </div>
@@ -166,9 +72,9 @@
       </div>
     </div>
   </div>
-    <div class="author-info">
-      Coded by <a href="#">Fonguh Joy Akwi</a> | Challenge by
-      <a href="https://www.devchallenges.io?ref=challenge" target="_blank"
-        >devChallenges.io</a>.
-  </body>
+  <div class="author-info">
+    Coded by <a href="#">Fonguh Joy Akwi</a> | Challenge by
+    <a href="https://www.devchallenges.io?ref=challenge" target="_blank">devChallenges.io</a>.
+</body>
+
 </html>
